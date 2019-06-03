@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>xhc.demo</groupId>
+  <artifactId>hello-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.9.RELEASE</version>
+    <relativePath />
+  </parent>
+  
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-dependencies</artifactId>
+		    <version>Finchley.SR3</version>
+		    <type>pom</type>
+		    <scope>import</scope>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  
+  <modules>
+  	<module>hello-eureka-server</module>
+  	<module>hello-user-api</module>
+  	<module>hello-ribbon</module>
+  	<module>hello-feign</module>
+  	<module>hello-feign-service-api</module>
+  	<module>hello-feign-service</module>
+  </modules>
+</project>

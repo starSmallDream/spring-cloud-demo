@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: hello-eureka-client
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: 22152
+Implementation-Vendor-Id: xhc.demo
+Build-Jdk: 1.8.0_172
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/hello-parent/hello-eureka-client
+Created-By: Maven Integration for Eclipse
+
